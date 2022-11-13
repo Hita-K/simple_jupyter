@@ -1,0 +1,56 @@
+#commands {
+    margin: 10px;
+}
+
+#nav{
+    height: 50px;
+    background-color:rgb(163, 148, 218);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+ #nav h2{
+     margin: 0;
+     color: rgb(2, 2, 2);
+     margin: 0 10px;
+ }
+
+
+ .cell{
+     padding: 10px 5px;
+     align-items: center;
+     display: flex;
+     flex-flow: row wrap;
+     
+ }
+
+ .cell:hover{
+     background-color: rgb(34, 177, 184);
+ }
+
+ .cell h4{
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+ }
+
+ .cell textarea{
+    width: 90%;
+ }
+
+ .cell p{
+     width: 100%;
+     margin-left: 40px;
+ }
+
+ .text-center {
+    text-align: center;
+  }
+
+#editing {
+    color: transparent;
+    background: transparent;
+    caret-color: rgb(163, 148, 218);
+  }

@@ -1,0 +1,37 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link href="static/prism.css" rel="stylesheet" /> 
+    <script defer src="static/script.js"></script>
+    <script defer src="static/command_handler.js"></script>
+    <title>Sample Jupter Notebook</title>
+</head>
+<body>
+    <script src="static/prism.js"></script> 
+    
+
+    <div id="nav">
+        <h2>Sample Jupyter Notebook</h2>
+    </div>
+    <div id="commands">
+        <div class="text-center">
+        <button onclick="addCell()">Add cell</button>
+        <button onclick="runCell()" id="run">Run cell</button>
+        </div>
+    </div>
+    <div id="cell-list">
+        <div class="cell" id="1" onclick="selectedCell(this)"> 
+            <h4>[1]</h4>
+            <textarea placeholder="Start typing here!" oninput="update(this.value)" onkeyup="do_resize(this);"></textarea>
+            <pre id="highlighting" aria-hidden="true">
+                <code class="language-python" id="highlighting-content"></code>
+              </pre>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>
